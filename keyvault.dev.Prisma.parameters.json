@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "tags": {
+            "value": {
+                "Role": "Checkov Test"
+            }
+        },
+        "keyVaults": {
+            "value": [{
+                    "name": "kv-checkov-test-992",
+                    "resourceGroupName": "rg-checkov-test",
+                    "location": "australiaeast",
+                    "enableSoftDelete": true,
+                    "softDeleteRetentionInDays": 7,
+                    "enablePurgeProtection": true,
+                    "enabledForTemplateDeployment": true,
+                    "networkRuleBypass": "AzureServices",
+                    "networkRuleDefaultAction": "Deny",
+                    "enableRbacAuthorization": true,
+                    "tags": {}
+                }
+            ]
+        }
+    }
+}
